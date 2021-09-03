@@ -1,9 +1,3 @@
-export type Join<K, P> = K extends string | number
-	? P extends string | number
-		? `${K}${'' extends P ? '' : '.'}${P}`
-		: never
-	: never;
-
 type Prev = [
 	never,
 	0,
@@ -17,18 +11,14 @@ type Prev = [
 	8,
 	9,
 	10,
-	11,
-	12,
-	13,
-	14,
-	15,
-	16,
-	17,
-	18,
-	19,
-	20,
 	...0[]
 ];
+
+type Join<K, P> = K extends string | number
+	? P extends string | number
+		? `${K}${'' extends P ? '' : '.'}${P}`
+		: never
+	: never;
 
 /**
  * Default depth to 3. Don't exceed with depth with recursive interfaces/types
@@ -42,6 +32,7 @@ export type Paths<T, D extends number = 3> = [D] extends [never]
 				: never;
 	  }[keyof T]
 	: '';
+
 
 /**
  * Default depth to 3. Don't exceed with depth with recursive interfaces/types
