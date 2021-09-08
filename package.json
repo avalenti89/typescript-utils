@@ -23,7 +23,7 @@
 		"url": "https://github.com/avalenti89/typescript-utils"
 	},
 	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/@enuan"
+		"registry": "https://npm.pkg.github.com/@avalenti89"
 	},
 	"module": "dist/typescript-utils.esm.js",
 	"devDependencies": {
