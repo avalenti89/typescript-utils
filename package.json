@@ -1,11 +1,10 @@
 {
-	"version": "0.1.9",
+	"version": "0.1.10",
 	"license": "MIT",
 	"main": "dist/index.js",
 	"typings": "dist/index.d.ts",
 	"files": [
-		"dist",
-		"src"
+		"dist"
 	],
 	"engines": {
 		"node": ">=10"
@@ -15,9 +14,7 @@
 		"build": "tsdx build",
 		"test": "tsdx test --passWithNoTests",
 		"lint": "tsdx lint src",
-		"prepare": "tsdx build",
-		"size": "size-limit",
-		"analyze": "size-limit --why"
+		"prepare": "tsdx build"
 	},
 	"name": "@avalenti89/typescript-utils",
 	"author": "avalenti89",
@@ -25,23 +22,13 @@
 		"type": "git",
 		"url": "https://github.com/avalenti89/typescript-utils"
 	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/@enuan"
+	},
 	"module": "dist/typescript-utils.esm.js",
-	"size-limit": [
-		{
-			"path": "dist/typescript-utils.cjs.production.min.js",
-			"limit": "10 KB"
-		},
-		{
-			"path": "dist/typescript-utils.esm.js",
-			"limit": "10 KB"
-		}
-	],
 	"devDependencies": {
-		"@size-limit/preset-small-lib": "^4.9.2",
 		"@types/dom-mediacapture-record": "^1.0.7",
-		"husky": "^5.0.9",
 		"mic-recorder-to-mp3": "^2.2.2",
-		"size-limit": "^4.9.2",
 		"tsdx": "^0.14.1",
 		"tslib": "^2.1.0",
 		"typescript": "^4.4.2"
