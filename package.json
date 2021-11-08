@@ -1,10 +1,11 @@
 {
-	"version": "0.1.11",
+	"version": "0.1.12",
 	"license": "MIT",
-	"main": "dist/index.js",
-	"typings": "dist/index.d.ts",
+	"main": "build/index.js",
+	"module": "build/typescript-utils.esm.js",
+	"types": "build/types/index.d.ts",
 	"files": [
-		"dist"
+		"build"
 	],
 	"engines": {
 		"node": ">=10"
@@ -30,7 +31,6 @@
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com/@avalenti89"
 	},
-	"module": "dist/typescript-utils.esm.js",
 	"devDependencies": {
 		"@types/dom-mediacapture-record": "^1.0.7",
 		"mic-recorder-to-mp3": "^2.2.2",
