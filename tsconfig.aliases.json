@@ -3,7 +3,12 @@
 	"compilerOptions": {
 		"baseUrl": "./build/types",
 		"paths": {
-			"*": ["./build/types/*"]
+			"types/*": ["./build/types/types/*"],
+			"types": ["./build/types/types"],
+			"utils/*": ["./build/types/utils/*"],
+			"utils": ["./build/types/utils"],
+			"*": ["./build/types/*"],
+			"": ["./build/types"]
 		}
 	}
 }
