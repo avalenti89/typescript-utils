@@ -10,3 +10,4 @@ export * from './readingTime';
 export * from './setDelay';
 export * from './targetTimeout';
 export * from './uglyBytes';
+export * from './promiseTimeout';
